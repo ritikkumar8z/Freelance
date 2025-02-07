@@ -1,0 +1,129 @@
+.footer {
+  background-color: #060f18;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;  // Ensure items wrap on smaller screens
+
+      .item {
+        width: 20%;
+        margin-bottom: 20px; // Add spacing between items
+        h2 {
+          font-size: 1.2rem;
+          color: aliceblue;
+          margin-bottom: 10px;
+        }
+        span {
+          display: block;
+          margin-bottom: 8px;
+          color: #848e98;
+          cursor: pointer;
+          &:hover {
+            color: #00df25;
+          }
+        }
+      }
+    }
+
+    hr {
+      margin: 20px 0;
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;  // Make sure it wraps on smaller screens
+
+      .left {
+        h2 {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        span {
+          color: #9cabb7;
+          font-size: 0.9rem;
+        }
+      }
+
+      .right {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;  // Allow wrapping for better mobile view
+
+        .social {
+          display: flex;
+          gap: 10px;
+
+          img {
+            width: 25px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            &:hover {
+              transform: scale(1.1); // Add zoom effect on hover
+            }
+          }
+        }
+
+        .link {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          img {
+            width: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            &:hover {
+              transform: scale(1.1); // Add zoom effect on hover
+            }
+          }
+        }
+
+        img {
+          width: 25px;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+          &:hover {
+            transform: scale(1.1); // Add zoom effect on hover
+          }
+        }
+      }
+    }
+  }
+
+  // Media Query for Smaller Screens (Mobile-First Design)
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;  // Reduce padding for smaller screens
+    }
+
+    .top {
+      flex-direction: column;
+      align-items: flex-start; // Stack items vertically on small screens
+    }
+
+    .bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px; // Add space between left and right sections
+    }
+
+    .right {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px; // Add space between each item in the right section
+    }
+
+    .social img, .link img, img {
+      width: 20px; // Reduce icon size on mobile
+    }
+  }
+}

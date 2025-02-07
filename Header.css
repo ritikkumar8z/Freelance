@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    color: gray;
+    font-weight: 500;
+  }
+  
+  
+  .nav-menu li {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .nav-menu li:hover {
+    color: green;
+    transform: scale(1.1);
+  }
+  
+
+
+  .talk-button {
+
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    color: rgb(84, 198, 18);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .talk-button:hover {
+    background-color: rgb(14, 171, 14);
+    color: rgb(255, 255, 255);
+    border: none;
+  }
+  

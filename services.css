@@ -1,0 +1,68 @@
+/* Main section styles */
+.section.service {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .service .section-subtitle {
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .service .section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  
+  .service .section-text {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .grid-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  
+  
